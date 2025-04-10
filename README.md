@@ -7,7 +7,7 @@
 
 To work on these projects, you will need to set up the AWS CLI and sign into AWS with your IDE of choice. Since you are developing locally (on your own computer) you will need to use the AWS CLI to get our TIW secret API keys from AWS Secrets Manager.
 
-## Setting up the AWS CLI
+## Setting up the AWS Command Line Interface (CLI)
 
 1. Visit https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 Download and install the MacOS or the Windows installer.
@@ -24,7 +24,7 @@ to see your AWS CLI version and see that is correctly installed.
 ```code
 aws configure
 ```
-and copy-paste your AWS Access Key and AWS Secret Access Key to 'sign in' to AWS.
+and copy-paste your **AWS Access Key** and **AWS Secret Access Key** to 'sign in' to AWS.
 
 3. Set your Default region name to 
 ```code
