@@ -4,4 +4,6 @@ AWS Lambda is basically a mini computer environment in the cloud that can execut
 
 TIW uses AWS Lambda to automatically sync the trainings between Canvas, the AWS Database (AWS DynamoDB), and Fabman. Another use case is to use a Lambda to periodically poll who has activated a MAC, and see, in real time, who is checked into a machine.
 
-In this exercise, you will learn how to set up a Lambda and deploy it using the AWS Console.
+In this exercise, you will go through a real, TIW use case for AWS Lambda, and learn how to deploy your Lambda.
+
+1. Set up the AWS CLI
