@@ -7,3 +7,4 @@ TIW uses AWS Lambda to automatically sync the trainings between Canvas, the AWS 
 In this exercise, you will go through a real, TIW use case for AWS Lambda, and learn how to deploy your Lambda.
 
 1. Set up the AWS CLI
+2. Pull the repository to your local environment
