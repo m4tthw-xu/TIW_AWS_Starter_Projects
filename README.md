@@ -20,4 +20,15 @@ aws --version
 
 to see your AWS CLI version and see that is correctly installed.
 
-2. 
+2. Execute
+```code
+aws configure
+```
+and copy-paste your AWS Access Key and AWS Secret Access Key to 'sign in' to AWS.
+
+Set your Default region name to 
+```code
+us-east-1
+```
+and then keep pressing "Enter" until the prompts stop.
+
