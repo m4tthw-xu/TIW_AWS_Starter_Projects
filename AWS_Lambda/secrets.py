@@ -1,10 +1,13 @@
-import botocore
-import botocore.session 
-from aws_secretsmanager_caching import SecretCache, SecretCacheConfig 
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'packages'))
+
+import botocore.session
+from aws_secretsmanager_caching import SecretCache, SecretCacheConfig
 import json
 
 '''
-This is code to get the Secrets of TIW
+This is code to get the Secrets of TIW, you SHOULD NOT need to modify this file at all if everything is setup correctly!
 
 What are TIW Secrets?
     - We pay for services like Fabman and AWS, and we also have our own private Canvas page we need to manage.

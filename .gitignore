@@ -1,1 +1,4 @@
 .venv
+AWS_Lambda/__pycache__
+AWS_Lambda/mattnotes.txt
+AWS_Lambda/lambda_function_answer.py
