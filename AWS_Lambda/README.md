@@ -43,10 +43,30 @@ Write code under the _TODO_ sections of the **lambda_function.py** code to print
 1. Make sure you have the AWS Command Line Interface (CLI) installed and set up with your TIW AWS Credentials
 2. Clone the repo (if you haven't already)
 
-# Hints and Guide
+# Deployment Steps
+Once you have written all of your code in the **lambda_function.py** file, and it works locally, you are ready to deploy your Lambda to AWS!
+
+1. Navigate to the root directory of your project
+2. Zip or compress EVERYTHING in the folder, and name it **"[YOUR_NAME]_lambda.zip"**
+3. Go to AWS Lambda in the AWS Console in your internet browser
+4. Click **Create Function** in the top right corner of the screen
+5. Name your function **"[YOUR_NAME]_lambda"**
+6. Change the runtime to **Python 3.13**
+7. Click **Create Function** to create your Lambda!
+8. **Message me** that you got to this step. I will need to add the necessary permissions for your Lambda to work properly and I'll let you know when you can continue.
+9. Once I add the right permissions to your lambda, click into the lambda you just created
+10. Under the **"Code"** tab, click **"Upload From"** and select **".zip file"**
+11. Click Upload and find the zip file you just created named **"[YOUR_NAME]_lambda.zip"** and hit Save
+12. Wait a few moments
+13. Once its done uploading, navigate to the Test tab and the the orange Test button to run your lambda.
+14. If all goes well, you should see a green pop up saying the Lambda executed properly. Open the window to see your results!
+
+# Hints / Troubleshooting
 1. What do you think the line ```members = fabman.get_members(q='matt')``` will do? How could you change the parameters to _query_ something else?
 2. To get the last name of a member, the line ```member.__getattribute__("lastName")``` might be helpful. Same goes for the first name and the email _attributes_.
 3. While it is ok to call the Fabman API as many times as you wish, the more times you call the API, the longer and more inefficient your code is. Can you solve the problem by using only one API call?
+4. If you get a TIMEOUT error saying the function execution took too long in AWS Lambda, under the Configuration tab, increase the timeout time from 3 seconds to 5.
+5. Message me with other issues you run into!
 
 
 
