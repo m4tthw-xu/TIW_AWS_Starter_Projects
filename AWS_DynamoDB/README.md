@@ -5,13 +5,13 @@
 </p>
 
 ## Intro to DynamoDB
-DynamoDB is an AWS-hosted and managed database service that integrates very nicely with all of the other AWS Services. We can store large amounts of data here to pull and run statistics and trigger Lambdas on.
+DynamoDB is an AWS-hosted and managed database service that integrates very nicely with all of the other AWS Services. We can store large amounts of data here to pull, run statistics, and trigger Lambdas on.
 
 # The Exercise
 In this exercise, you will face a very realistic scenario that will help you...
 
 1. Learn how to query data from a Dynamo table
-2. Practice getting and parsing information from tables in Python
+2. Practice getting and processing information from tables in Python
 3. Learn how to make your own Dynamo Table and write to it
 
 Before moving on to **The Scenario**, take some time to look through the code in this folder and try to understand what is going on.
@@ -27,4 +27,7 @@ He also gives you a few bonus tasks that would make him very happy.
 
 # Your Task
 Write code under the _TODO_ sections of the **find_students.py** code to populate a DynamoDB table with the names, attempts, and scores of the students who HAVE completed the Bambu Online Quiz but HAVE NOT completed the Bambu In-Person quiz.
+
+Also complete one of the two bonus tasks (or do them both :))
+
 
