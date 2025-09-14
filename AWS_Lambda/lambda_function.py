@@ -6,6 +6,8 @@ def lambda_handler(event, context):
     """
     This is the Lambda handler -- this is the entry point where AWS Lambda looks for to run your code
     """
+
+    print(get_fabman_secret())
     # this is how we initialize a fabman connection object using the API key we get in secrets.py
     fabman = Fabman(get_fabman_secret())
 
