@@ -1,4 +1,11 @@
 .venv
+.venv2
 AWS_Lambda/__pycache__
 AWS_Lambda/mattnotes.txt
 AWS_Lambda/lambda_function_answer.py
+
+AWS_DynamoDB/__pycache__
+AWS_DynamoDB/bambu_online_training_quiz_report.csv
+AWS_DynamoDB/dynamoDB_answer.py
+AWS_DynamoDB/populate_dynamo.py
+

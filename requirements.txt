@@ -1,3 +1,4 @@
 boto3
-aws-secretsmanager-caching
+aws_secretsmanager_caching
 fabman
+matplotlib

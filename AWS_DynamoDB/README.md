@@ -12,15 +12,15 @@ DynamoDB is an AWS-hosted and managed database service that integrates very nice
 
 In this exercise, you will face a very realistic scenario that will help you...
 
-1. Learn how to query data from a Dynamo table
-2. Practice getting and processing information from tables in Python
-3. Learn how to make your own Dynamo Table and write to it
+1. Set up local development with Python virtual environments
+2. Learn how to query data from a Dynamo table
+3. Practice getting and processing information in Python
 
 Before moving on to **The Scenario**, take some time to look through the code in this folder and try to understand what is going on.
 
 # The Scenario
 
-Scott wants to find the distribution of scores across all attempts made for the Bambu P1P Online Training Quiz.
+Scott wants to find the distribution of scores across all attempts made for the Bambu P1P Online Training Quiz (for April of 2025).
 
 You tell him that you can get all the data stored in a DynamoDB table and give him a cool graphic that will show him the distribution.
 
@@ -47,3 +47,14 @@ Write code under the _TODO_ sections of the **dynamoDB.py** code to populate a D
 Also complete the two bonus tasks (They are pretty short)
 
 # Setup Steps
+
+Notice how this folder does not have the 'packages' folder from before--that is because I didn't install all of the code dependencies for you like last time. Instead, you will be installing them yourselves in your own Python virtual environment, and making sure everything is set up properly.
+
+1. Make sure AWS is configured on your local machine
+2. Set up a python virtual environment
+
+- Follow all the steps in this website up to 'Install Packages' for you OS
+- https://www.w3schools.com/python/python_virtualenv.asp
+
+3. Run the command 'pip install -r requirements.txt' in your terminal to get all of the needed dependencies to make your code run.
+4. Run the dynamoDB.py file, you should see 'Connected to DynamoDB table: TIW_Bambu_Online_Quiz_apr25' if everything is installed properly!

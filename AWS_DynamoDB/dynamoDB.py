@@ -17,7 +17,8 @@ def plot_list(arr, x_title, y_title):
 ddb = boto3.resource('dynamodb')
 
 # TODO: specify the DDB table we want to pull data from
-table = ddb.Table('')
+table = ddb.Table('TIW_Bambu_Online_Quiz_apr25')
+print(f"Connected to DynamoDB table: {table.table_name}")
 
 # TODO: do a table scan for all of the values in the 'score' column
 
