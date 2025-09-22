@@ -1,0 +1,4 @@
+boto3
+aws_secretsmanager_caching
+fabman
+matplotlib

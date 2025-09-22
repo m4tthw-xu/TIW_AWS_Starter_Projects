@@ -5,9 +5,11 @@
 </p>
 
 ## Intro to DynamoDB
+
 DynamoDB is an AWS-hosted and managed database service that integrates very nicely with all of the other AWS Services. We can store large amounts of data here to pull, run statistics, and trigger Lambdas on.
 
 # The Exercise
+
 In this exercise, you will face a very realistic scenario that will help you...
 
 1. Learn how to query data from a Dynamo table
@@ -17,17 +19,31 @@ In this exercise, you will face a very realistic scenario that will help you...
 Before moving on to **The Scenario**, take some time to look through the code in this folder and try to understand what is going on.
 
 # The Scenario
-Scott wants you to find all the people who has taken the Bambu P1P Online Training Quiz but who HAVE NOT taken In-Person Bambu Training Quiz. This is his main goal: he wants to track down these people and personally ask them why they have not completed their in person training.
 
-You tell him that you will create your own DynamoDB table to compile a list of the first and last names of these students, their number of attempts, and their final scores on the Online Training Quiz.
+Scott wants to find the distribution of scores across all attempts made for the Bambu P1P Online Training Quiz.
 
-He also gives you a few bonus tasks that would make him very happy.
-1. What is the most missed question on the Online Training Quiz?
-2. What percentage of people complete the Online Training Quiz on their first try?
+You tell him that you can get all the data stored in a DynamoDB table and give him a cool graphic that will show him the distribution.
+
+He also gives you a few short bonus tasks that would make him very happy.
+
+1. How many people missed question 2 on the Bambu Online Training Quiz? (Hint: use the code expression below to get all of the data for that question)
+
+```code
+response = table.scan(
+    ProjectionExpression='#col1',
+    ExpressionAttributeNames={
+        '#col1': '29884637: What storage device do we use to store our G-code files for the Bambu Lab P1P printers?'
+    }
+)
+
+```
+
+2. What percentage of students missed that question?
 
 # Your Task
-Write code under the _TODO_ sections of the **find_students.py** code to populate a DynamoDB table with the names, attempts, and scores of the students who HAVE completed the Bambu Online Quiz but HAVE NOT completed the Bambu In-Person quiz.
 
-Also complete one of the two bonus tasks (or do them both :))
+Write code under the _TODO_ sections of the **dynamoDB.py** code to populate a DynamoDB table with the names, attempts, and scores of the students who HAVE completed the Bambu Online Quiz but HAVE NOT completed the Bambu In-Person quiz.
 
+Also complete the two bonus tasks (They are pretty short)
 
+# Setup Steps
