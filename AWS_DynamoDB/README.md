@@ -58,3 +58,19 @@ Notice how this folder does not have the 'packages' folder from before--that is 
 
 3. Run the command 'pip install -r requirements.txt' in your terminal to get all of the needed dependencies to make your code run.
 4. Run the dynamoDB.py file, you should see 'Connected to DynamoDB table: TIW_Bambu_Online_Quiz_apr25' if everything is installed properly!
+
+# Hints / Troubleshooting
+
+1. You might have to go into the AWS console to get a better idea of where/what the data is. To do that, search for DynamoDB in the console -> click 'Tables' on the left -> search for 'TIW_Bambu_Online_Quiz_apr25' -> click 'Explore Table Items' in the top right. This is the full dataset with the column names and everything.
+2. A table scan is done using this line of code
+
+```code
+response = table.scan(
+      ProjectionExpression='sis_id'
+)
+```
+
+This code will get all of the data under the sis_id column in the table.
+
+3. The response is a huge dictionary of data returned by the AWS API. You should look under response['Items'] to isolate the actual data you are looking for.
+4. Message me with any other questions you have!
